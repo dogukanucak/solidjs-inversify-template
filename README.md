@@ -7,6 +7,16 @@ Please examine the **IoC** folder and also **Services** folder to see an example
 
 ## DI Usage
 
+Create a DI Container
+```typescript
+// https://github.com/inversify/InversifyJS/blob/master/wiki/container_api.md
+import { Container } from "inversify";
+
+const DI_CONTAINER = new Container();
+
+export default DI_CONTAINER;
+```
+
 Create an injectable service
 
 ```typescript
