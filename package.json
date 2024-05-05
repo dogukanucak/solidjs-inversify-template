@@ -1,0 +1,21 @@
+{
+  "name": "solidjs-inversify-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {    
+    "inversify": "^6.0.2",
+    "reflect-metadata": "^0.1.14",
+    "solid-js": "^1.8.17"   
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vite-plugin-solid": "^2.10.2"
+  }
+}
