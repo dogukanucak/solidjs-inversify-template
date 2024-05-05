@@ -3,7 +3,7 @@
 This template extends [Template-Solid-Ts ](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-solid-ts) project with [Inversify JS](https://github.com/inversify/InversifyJS) to provide power of IoC.
 
 In this template, the application does not directly depend on concrete implementations, rather getting services via injection tokens.
-Please examine **IoC** folder and also **Services** folder to see an example of http service. 
+Please examine the **IoC** folder and also **Services** folder to see an example of http service. 
 
 ## DI Usage
 
@@ -53,6 +53,8 @@ httpClient.request({method: HttpMethod.GET, url: JSON_PLACE_HOLDER_URL});
 ```
 
 As you see, it always goes by contracts. The main application does not actually care about which HttpClient or adapter is used. Therefore, it is easy to replace services, 3rd party libraries without worrying to break application as long as we ensure the contracts
+
+In this project, **fetch** is used to send requests, so that `FetchAdapter` is implemented. If you want to use another AJAX library, all you need to do is implement an adapter based on your library (e.g., `AxiosAdapter`, `RxJsAdapter`) and inject that adapter instead of `FetchAdapter` 
 
 
 ## App Usage
